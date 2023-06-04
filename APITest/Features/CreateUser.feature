@@ -19,7 +19,7 @@ Feature: Create User
   Scenario: Create a user (Negative)
     Given I have an invalid user payload
     When I call a POST request to "/api/users"
-    Then the invalid response status code should be 201
+    Then the invalid response status code should be 404
  
   #Scenario: Invalid user ID
   #  Given a user with ID does not exist
